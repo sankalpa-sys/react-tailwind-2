@@ -2,7 +2,7 @@ import React from 'react'
 
 function Card(props) {
     return (
-        <div class=" max-w-sm border rounded-xl shadow-lg overflow-hidden">  
+        <div class=" max-w-sm border rounded-xl shadow-lg overflow-hidden hover:scale-105 transform transition duration-300 ease-out">  
         
             <div className="">
                 <img src={props.image} alt="" />
@@ -16,8 +16,8 @@ function Card(props) {
                 {props.desc}
             </div>
             <div className="flex justify-around my-4">
-                <button className="h-10 shadow-lg border-md rounded-full bg-yellow-300 px-4 hover:bg-yellow-400 hover:text-white hover:shadow-2xl font-semibold">Add to Cart</button>
-                <button className="h-10 shadow-lg border-md rounded-full bg-green-300 px-4 hover:bg-green-400 hover:text-white hover:shadow-2xl font-semibold" >Add to Favorites</button>
+                <button className="h-10 shadow-lg border-md rounded-full bg-yellow-300 px-4 hover:bg-yellow-400 hover:text-black hover:shadow-2xl font-semibold">Add to Cart</button>
+                <button className="h-10 shadow-lg border-md rounded-full bg-green-300 px-4 hover:bg-green-400 hover:text-black hover:shadow-2xl font-semibold" >Add to Favorites</button>
             </div>
       </div>
     )
