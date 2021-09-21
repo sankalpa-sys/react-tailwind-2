@@ -3,10 +3,10 @@ import Social from "./Social";
 
 function Footer() {
   return (
-    <div className="border bg-gray-300">
+    <div className="border-2 bg-gray-300">
       <div className="mt-6 space-y-4 grid cols-1 sm:grid-cols-3 px-8 items-center pt-6 pb-4 ">
         <div>
-          <p className="font-bold mb-2">Services</p>
+          <p className="font-bold mb-2 text-lg animate-pulse">Services</p>
           <ul className="text-gray-600 cursor-pointer space-y-2">
             <li>Web design</li>
             <li>Development </li>
@@ -14,15 +14,15 @@ function Footer() {
           </ul>
         </div>
         <div>
-          <p className="font-bold mb-2">About</p>
+          <p className="font-bold mb-2 text-lg animate-pulse">About</p>
           <ul className="text-gray-600 cursor-pointer space-y-2">
-            <li>Comapany</li>
+            <li>Company</li>
             <li>Teams </li>
             <li>Career</li>
           </ul>
         </div>
         <div>
-          <p className="font-bold mb-2">Dokan</p>
+          <p className="font-bold mb-2 text-lg animate-pulse">Dokan</p>
           <p className="text-gray-600">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
             nesciunt ut placeat iure ad harum rem enim exercitationem, expedita
