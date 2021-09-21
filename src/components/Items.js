@@ -25,7 +25,7 @@ function Items(props) {
 
     }
     return (
-        <div className="grid grid-cols-1 justify-center sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-3 lg:grid-cols-3 2xl:grid-cols-4 space-x-4 space-y-4 my-6 items-center mx-4">
+        <div className="grid grid-cols-1 justify-center sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-3 lg:grid-cols-3 2xl:grid-cols-4 space-x-4 space-y-6 my-6 items-center mx-4">
             {results.map((element)=> (
                 <Card key = {element.image} image={element.image} title={element.title} price ={element.price} desc={element.description}/>
             ))}

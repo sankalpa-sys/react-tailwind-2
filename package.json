@@ -5,6 +5,7 @@
   "dependencies": {
     "@badrap/bar-of-progress": "^0.1.2",
     "@craco/craco": "^6.2.0",
+    "@headlessui/react": "^1.4.1",
     "@heroicons/react": "^1.0.4",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
