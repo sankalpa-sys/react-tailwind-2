@@ -5,51 +5,49 @@ import {
   NavLink
 } from "react-router-dom";
 
-function Footer() {
+function Footer(props) {
   const myStyle = {
     color: "red",
   }
   return (
-    <div className="border-2 bg-gray-300">
+    <div className={`border-t bg-${props.bgcolor} text-${props.textColor}` }>
       <div className="mt-6 space-y-4 grid cols-1 sm:grid-cols-4 xl:grid-cols-4 px-8  pt-6 pb-4 ">
         <div>
           <p className="footer_header">Services</p>
-          <ul className="text-gray-600 cursor-pointer space-y-2">
+          <ul className= "cursor-pointer space-y-2">
             <li>Web design</li>
             <li>Development </li>
             <li>Hosting</li>
           </ul>
         </div>
         <div>
-          <p className="footer_header">About</p>
-          <ul className="text-gray-600 cursor-pointer space-y-2">
-            <li>Company</li>
-            <li>Teams </li>
+          <p className="footer_header">Get to Know Us</p>
+          <ul className=" cursor-pointer space-y-2">
+            <li>Blog</li>
+            <li>About Dokan </li>
             <li>Career</li>
+            <li>Investor Relations</li>
           </ul>
         </div>
         <div>
         <p className="footer_header">Categories</p>
-        <ul className="text-gray-600 cursor-pointer space-y-2">
+        <ul className=" cursor-pointer space-y-2">
           <li><NavLink activeClassName="selected"
-                  activeStyle={myStyle} to="/" exact={true}>Electronics</NavLink></li>
+                  activeStyle={myStyle} to="/" exact={true} className="hover:text-red-500">Electronics</NavLink></li>
           <li><NavLink activeClassName="selected"
-                  activeStyle={myStyle} to="/jewelery" exact={true}>Jewelery</NavLink></li>
+                  activeStyle={myStyle} to="/jewelery" exact={true} className="hover:text-red-500">Jewelery</NavLink></li>
         </ul>
       </div>
         <div className="">
           <p className="footer_header">Dokan</p>
-          <p className="text-gray-600">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
-            nesciunt ut placeat iure ad harum rem enim exercitationem, expedita
-            nihil incidunt, eius error veniam aliquam, earum quas officia
-            deleniti dolorum.
+          <p className="">
+          Dokan Inc. is a global commerce leader that connects millions of buyers and sellers in more than 190 markets around the world. We exist to enable economic opportunity for individuals, entrepreneurs, businesses and organizations of all sizes.
           </p>
         </div>
       </div>
       
       <div className="justify-center items-center my-4">
-          <Social/>
+          <Social className={`text-${props.textColor}`}/>
           <p className="flex justify-center font-light my-4">Dokan &copy; 2021</p>
       </div>
     </div>

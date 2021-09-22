@@ -7,7 +7,7 @@ function Card(props) {
     console.log(newRating);
   };
   return (
-    <div className=" max-w-sm border rounded-xl shadow-lg overflow-hidden hover:scale-105 transform transition duration-300 ease-out">
+    <div className={ `max-w-sm border rounded-xl shadow-lg overflow-hidden hover:scale-105 transform transition duration-300 ease-out`}>
       <div className="">
         <img src={props.image} alt=""/>
       </div>

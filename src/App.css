@@ -7,6 +7,6 @@
     @apply font-serif hover:text-red-500
   }
   .footer_header{
-    @apply font-bold mb-2 text-lg animate-pulse 
-  }
+    @apply font-bold mb-2 text-lg animate-pulse
+}
 }
