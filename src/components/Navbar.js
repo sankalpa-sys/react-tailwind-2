@@ -1,6 +1,6 @@
 import React from "react";
 import { SearchIcon, SunIcon, MoonIcon } from "@heroicons/react/solid";
-import { NavLink } from "react-router-dom";
+import { NavLink} from "react-router-dom";
 
 function Navbar(props) {
   const myStyle = {
@@ -12,7 +12,7 @@ function Navbar(props) {
     <div
       className={`sticky z-50 top-0 flex h-16 text-${props.textcolor} pt-2 items-center justify-between border-b border-${props.border}  bg-${props.bgcolor}`}
     >
-      <div className="flex items-center  md:pl-2 ">
+      <div className="flex items-center  md:pl-2 hover:scale-105 transform transition duration-300 ease-out hover:text-black ">
         {/*left side  */}
         <NavLink to="/" className="flex items-center md:ml-4 cursor-pointer">
           <img src={props.Logo} alt="" className="h-8 border rounded-full" />
@@ -51,7 +51,7 @@ function Navbar(props) {
           </NavLink>
 
           {/* Switch */}
-          <div class="form-check form-switch">
+          <div className="hidden md:flex items-center space-x-2 form-check form-switch">
             <input
               className="form-check-input"
               type="checkbox"
@@ -62,7 +62,7 @@ function Navbar(props) {
               className="form-check-label"
               htmlFor="flexSwitchCheckDefault"
             >
-              {props.mode==="light"? <SunIcon className="h-6"/>: <MoonIcon className="h-6"/>}
+              {props.mode==="light"? <SunIcon className="h-6 animate-spin"/>: <MoonIcon className="h-6 animate-pulse"/>}
             </label>
           </div>
         </ul>

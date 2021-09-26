@@ -24,8 +24,8 @@ function Footer(props) {
           <p className="footer_header">Get to Know Us</p>
           <ul className=" cursor-pointer space-y-2">
             <li>Blog</li>
-            <li>About Dokan </li>
-            <li>Career</li>
+            <li><NavLink to="/about">About Dokan </NavLink></li>
+            <li><NavLink to ="/contact">Contact Us</NavLink></li>
             <li>Investor Relations</li>
           </ul>
         </div>
