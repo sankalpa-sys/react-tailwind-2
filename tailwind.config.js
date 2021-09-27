@@ -6,7 +6,10 @@ module.exports = {
   },
   variants: {
     extend: {
-      animate: ['hover'],
+      backgroundColor: ['active'],
+      boxShadow: ["active"],
+      scale: ['active', 'group-hover'],
+      
     },
   },
   plugins: [],

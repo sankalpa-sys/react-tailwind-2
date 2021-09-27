@@ -7,18 +7,23 @@ import Footer from "./components/Footer";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Service from "./components/Service";
 
 function App() {
 
   const [mode, setmode] = useState("light")
   const [bgcolor, setbgcolor] = useState("gray-300")
-  const [fieldBg, setfieldBg] = useState("indigo-100")
+  const [fieldBg, setfieldBg] = useState("blue-100")
+  const [borderColor, setborderColor] = useState("gray-300")
+  const [cardBg, setcardBg] = useState("white")
   
   const [textColor, settextColor] = useState("black")
   const handleClick = () => {
     if(mode === "light"){
       setmode("dark")
       setbgcolor("black")
+      setborderColor("indigo-500")
+      setcardBg("gray-900")
      
       settextColor("white")
       setfieldBg("gray-900")
@@ -27,7 +32,9 @@ function App() {
     else{
       setbgcolor("gray-300")
       setmode("light")
-      setfieldBg("violet-100")
+      setfieldBg("blue-100")
+      setborderColor("gray-300")
+      setcardBg("white")
       
       settextColor("black")
       document.body.style.backgroundColor=
@@ -53,7 +60,10 @@ function App() {
             <About textColor={textColor}/>
           </Route>
           <Route exact path="/contact">
-            <Contact textColor={textColor} fieldBg={fieldBg}/>
+            <Contact textColor={textColor} fieldBg={fieldBg} borderColor={borderColor}/>
+          </Route>
+          <Route exact path="/service">
+            <Service textColor={textColor} cardBg={cardBg} />
           </Route>
         </Switch>
         <Footer bgcolor={bgcolor} textColor={textColor} />
